@@ -5,7 +5,8 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ps3dev/ps3toolchain:latest
+  container:
+  image: zeldin/ps3dev-docker:latest
     steps:
     - uses: actions/checkout@v4
 
