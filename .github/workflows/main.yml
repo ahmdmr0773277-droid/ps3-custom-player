@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ghcr.io/bucanero/ps3toolchain:latest
+    container: ps3dev/ps3toolchain:latest
     steps:
     - uses: actions/checkout@v4
 
